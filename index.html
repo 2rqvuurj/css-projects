@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje CSS Projekty</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1000px;
+            padding: 0 2rem 4rem 2rem;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin: 0 0 0.5rem 0;
+            color: var(--accent);
+        }
+
+        .card:hover h2 {
+            color: var(--accent-hover);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎨 Moje CSS Projekty</h1>
+        <p class="subtitle">Rozcestník pro všechny moje komponenty a experimenty</p>
+    </header>
+
+    <div class="grid">
+        <a href="./animations/programing robot/index.html" class="card">
+            <div class="card-icon">🤖</div>
+            <h2>Animations</h2>
+            <p>Ukázky různých CSS animací (např. Programing Robot, Vesmír...)</p>
+        </a>
+
+        <a href="./buttons/animated button/index.html" class="card">
+            <div class="card-icon">🔘</div>
+            <h2>Buttons</h2>
+            <p>Různé styly a interaktivní efekty pro tlačítka</p>
+        </a>
+
+        <a href="./card roundclicker/index.html" class="card">
+            <div class="card-icon">🃏</div>
+            <h2>Card Roundclicker</h2>
+            <p>Interaktivní karta s klikacími efekty</p>
+        </a>
+
+        <a href="./error 404 page/index.html" class="card">
+            <div class="card-icon">⚠️</div>
+            <h2>Error 404 Page</h2>
+            <p>Design stránky pro neexistující URL</p>
+        </a>
+
+        <a href="./feedback page/index.html" class="card">
+            <div class="card-icon">💬</div>
+            <h2>Feedback Page</h2>
+            <p>Stránka pro uživatelskou zpětnou vazbu</p>
+        </a>
+
+        <a href="./monsters/index.html" class="card">
+            <div class="card-icon">👾</div>
+            <h2>Monsters</h2>
+            <p>Kreativní CSS kresby a animace příšerek</p>
+        </a>
+
+        <a href="./pricing cards/index.html" class="card">
+            <div class="card-icon">💰</div>
+            <h2>Pricing Cards</h2>
+            <p>Designové ceníkové karty pro weby</p>
+        </a>
+
+        <a href="./register and login/index.html" class="card">
+            <div class="card-icon">🔐</div>
+            <h2>Register & Login</h2>
+            <p>Moderní formuláře pro přihlášení a registraci</p>
+        </a>
+
+        <a href="./resposvive sviper/index.html" class="card">
+            <div class="card-icon">📱</div>
+            <h2>Responsive Swiper</h2>
+            <p>Responzivní slider pro posouvání obsahu</p>
+        </a>
+
+        <a href="./search bar/index.html" class="card">
+            <div class="card-icon">🔍</div>
+            <h2>Search Bar</h2>
+            <p>Různé designy a animace vyhledávacích polí</p>
+        </a>
+
+        <a href="./social media icons/index.html" class="card">
+            <div class="card-icon">🌐</div>
+            <h2>Social Media Icons</h2>
+            <p>Ikonky sociálních sítí se stylovými efekty najetí myší</p>
+        </a>
+    </div>
+
+</body>
+</html>
